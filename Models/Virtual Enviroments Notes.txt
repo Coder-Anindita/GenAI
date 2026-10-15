@@ -1,0 +1,41 @@
+What is a Virtual Environment?
+A virtual environment is an isolated Python environment that allows a project to manage its dependencies separately from other projects and the system Python installation.
+
+Main Advantages
+1. Dependency isolation
+2. Avoids version conflicts
+3. Keeps system Python clean
+4. Reproducibility-You can record dependencies in:requirements.txt and another developer can recreate the same environment.
+
+What is venv?
+Python provides a built-in module called:venv
+
+The basic syntax is:
+python -m venv <environment_name> or use py
+
+Activating the Virtual Environment
+source venv/Scripts/activate-git bash
+.\venv\Scripts\Activate.ps1-powershell
+
+
+How Do You Know It Is Activated?
+(venv) C:\Users\Anindita\my_project>
+
+
+Installing Packages Inside the Environment
+pip install requests
+
+
+Checking Installed Packages
+pip list
+pip freeze
+pip freeze > requirements.txt
+
+
+requirements.txt
+pip install -r requirements.txt
+
+
+Deactivating the Environment
+deactivate
+
